@@ -26,7 +26,6 @@ h1 {
 	margin: 0;	font-weight: 700;
 	font-variation-settings: 'wght' 700;
 	user-select: none;
-	transition: font-size 150ms ease forward;
 	animation: pulse 5s ease-in-out 0s infinite alternate-reverse;
 }
 
