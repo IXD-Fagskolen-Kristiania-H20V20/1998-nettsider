@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 20px;
+	background: #111;
+	color: #eee;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Fira Code', monospace;
+	font-size: 16px;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 7rem;
+	line-height: 7rem;
+	padding-bottom: 2rem;
+	max-width: 900px;
+	margin: 0;
+	font-weight: 670;
+	font-variation-settings: 'wght' 670;
+	user-select: none;
+	transition: font-size 150ms ease forward;
+
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	column-count: 3;
+	column-count: 20px;
+	max-width: 900px;
+}
+
+ul>li>a {
+	display: inline-block;
+	/* text-decoration: none; */
+	color: #eee;
+	padding: 7px;
+	font-size: 1.5rem;
+	font-weight: 300;
+	transition: font-variation-settings 300ms ease;
+	font-variation-settings: 'wght' 300;
+}
+
+ul>li>a:hover {
+	color: #eee;
+	font-weight: 900;
+	font-variation-settings: 'wght' 900;
+}
+
+@media (max-width:860px) {
+	h1 {
+		font-size: 5rem;
+		line-height: 5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	ul {
+		column-count: 2;
+		max-width: 550px;
+	}
+
+	ul>li>a {
+		font-size: 1.2rem;
+		padding: 6px;
+	}
+}
+
+@media (max-width:500px) {
+	h1 {
+		font-size: 3rem;
+		line-height: 3.5rem;
+		padding-bottom: 1rem;
+	}
+
+	ul {
+		column-count: 1;
+	}
+}

@@ -1,0 +1,157 @@
+
+<h1 style="color:#81C207";>Hei</h1>
+
+<span >
+  <h1 
+  style="color:#81C207";>Hei
+  </h1>
+  <h1 
+  style="color:#81C207";>Hei
+  </h1>
+</span>
+
+<h1 
+style="text-align:center;">
+</h1>
+
+<h2 
+style="color:deeppink" style="font-family:cursive"> Amalie Ardem
+</h2>
+
+<P style="color:#229C42";>Født 1995. Velkommen til min første nettside siden piczo. Etter å ha jobbet lenge med kundeservice for netthandelbutikker så har jeg startet å irritere meg over programmer og nettsider som ikke er intuitive, dette sier jeg på den beste og mest positive måten. Det å finne et studie som går så sammen med "pet peevene" mine var gull verdt. Det er kjempe spennende og jeg gleder meg til å utvikle meg og lære om dette emnet. Da jeg tenker veldig visuelt og er perfeksjonist på slikt så er jeg spent på å gi slipp på perfeksjonisme og heller være kreativ.</p>
+</br> <P style="color:#FE6666";>Jeg er engasjert i dyrevern, dette er et område der jeg føler jeg kan gjøre en forskjell hver dag. Ellers er livet et eventyr og man kan lære så utrolig mye. Dette studiet er det eneste jeg har inressert meg i og ønsket for meg selv, så jeg gleder meg masse til de to neste årene.</p>
+
+
+ 
+</br><Img src="cat.gif">
+
+</br><Img src="amalie.jpg"
+    alt="Obligatorisk bilde;
+          "
+     title="Obligatorisk bilde">
+  
+    <P id="s1">...</P>
+
+  </br><Img src="perfeksjonist.jpeg">
+  </br> <Img src="sying.jpeg" >
+    
+  </br><iframe width="1094" height="572" src="https://www.youtube.com/embed/71PD2f1ogyk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href=https://www.vg.no>. </a>
+<marquee><IMG SRC="avocado.gif">"</marquee>
+<style>
+body {
+  
+  background-color: #FFE6D2;
+}
+{
+font-size: 250px;
+font-family: sans-serif
+
+}
+</style>
+
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+  
+    
+    //Configure below to change URL path to the snow image
+    var snowsrc="https://media3.giphy.com/media/LOR1aDExrVLZlkpOAX/giphy.gif"
+    // Configure below to change number of snow to render
+    var no = 10;
+    // Configure whether snow should disappear after x seconds (0=never):
+    var hidesnowtime = 0;
+    // Configure how much snow should drop down before fading ("windowheight" or "pageheight")
+    var snowdistance = "pageheight";
+  
+  ///////////Stop Config//////////////////////////////////
+  
+    var ie4up = (document.all) ? 1 : 0;
+    var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+  
+    function iecompattest(){
+    return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+    }
+  
+    var dx, xp, yp;    // coordinate and position variables
+    var am, stx, sty;  // amplitude and step variables
+    var i, doc_width = 800, doc_height = 600; 
+    
+    if (ns6up) {
+      doc_width = self.innerWidth;
+      doc_height = self.innerHeight;
+    } else if (ie4up) {
+      doc_width = iecompattest().clientWidth;
+      doc_height = iecompattest().clientHeight;
+    }
+  
+    dx = new Array();
+    xp = new Array();
+    yp = new Array();
+    am = new Array();
+    stx = new Array();
+    sty = new Array();
+    snowsrc=(snowsrc.indexOf("dynamicdrive.com")!=-1)? "snow.gif" : snowsrc
+    for (i = 0; i < no; ++ i) {  
+      dx[i] = 0;                        // set coordinate variables
+      xp[i] = Math.random()*(doc_width-50);  // set position variables
+      yp[i] = Math.random()*doc_height;
+      am[i] = Math.random()*20;         // set amplitude variables
+      stx[i] = 0.02 + Math.random()/10; // set step variables
+      sty[i] = 0.7 + Math.random();     // set step variables
+      if (ie4up||ns6up) {
+        if (i == 0) {
+          document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='"+snowsrc+"' border=\"0\"><\/a><\/div>");
+        } else {
+          document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+        }
+      }
+    }
+  
+    function snowIE_NS6() {  // IE and NS6 main animation function
+      doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
+      doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
+      for (i = 0; i < no; ++ i) {  // iterate for every dot
+        yp[i] += sty[i];
+        if (yp[i] > doc_height-50) {
+          xp[i] = Math.random()*(doc_width-am[i]-30);
+          yp[i] = 0;
+          stx[i] = 0.02 + Math.random()/10;
+          sty[i] = 0.7 + Math.random();
+        }
+        dx[i] += stx[i];
+        document.getElementById("dot"+i).style.top=yp[i]+"px";
+        document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
+      }
+      snowtimer=setTimeout("snowIE_NS6()", 10);
+    }
+  
+    function hidesnow(){
+      if (window.snowtimer) clearTimeout(snowtimer)
+      for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden"
+    }
+      
+  
+  if (ie4up||ns6up){
+      snowIE_NS6();
+      if (hidesnowtime>0)
+      setTimeout("hidesnow()", hidesnowtime*1000)
+      }
+  
+  </script>
+
+<div align="center" style="z-index:9;visibility:visible;"><a href="" target="_blank" class="tfc"></a></div><style>HTML,BODY{cursor: url("https://downloads.totallyfreecursors.com/cursor_files/foxwag.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/foxwag.gif"), auto;}</style>
+  
+  
+  
+  <img> 
