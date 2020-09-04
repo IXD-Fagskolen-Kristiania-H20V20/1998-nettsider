@@ -23,12 +23,21 @@ h1 {
 	line-height: 7rem;
 	padding-bottom: 2rem;
 	max-width: 900px;
-	margin: 0;
-	font-weight: 670;
-	font-variation-settings: 'wght' 670;
+	margin: 0;	font-weight: 700;
+	font-variation-settings: 'wght' 700;
 	user-select: none;
 	transition: font-size 150ms ease forward;
+	animation: pulse 5s ease-in-out 0s infinite alternate-reverse;
+}
 
+@keyframes pulse {
+	0% {
+		font-variation-settings: 'wght' 400;
+	}
+
+	100% {
+		font-variation-settings: 'wght' 700;
+	}
 }
 
 ul {
